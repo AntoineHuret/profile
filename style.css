@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500; /* if you want the light version */
+  background-color: #FFEDD8;
+  font-size: 16px;
+  color: #891652;
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+  color: #891652;
+}
+
+h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #891652;
+}
+
+p {
+  font-family: "Mulish", sans-serif;
+  color: #240A34;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+div{
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color:#891652;
+}
+
+a:hover {
+  color:#EABE6C;
+}
+
+.card-white {
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+  background-color: white;
+  margin: 20px 0px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid #891652;
+}
+
+.btn-red {
+  background-color: #891652;
+  color: #EABE6C;
+  font-weight: bolder;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.btn-red:hover {
+  text-decoration: none;
+  background-color: #EABE6C;
+  color: #891652;
+  font-weight: bolder;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+
+.il-no {
+  text-decoration: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+  font-size: 50px;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.titre_image {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.texte_bouton {
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 1300px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+  .flex{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 600px;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  h1{
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 25px;
+    max-width: fit-content;
+    align-self: center;
+  }
+  p {
+    font-family: "Mulish", sans-serif;
+    color: #240A34;
+    font-style: italic;
+    padding-bottom: 20px;
+    font-size:medium;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+    height: fit-content;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  h1{
+    font-size: x-large;
+  }
+  .img-circle {
+    width: 40%;
+
+  }
+  p {
+    display: none;
+  }
+  i {
+font-size: small;
+  }
+}
